@@ -1,0 +1,77 @@
+:root {
+    --p-color: var(--c-13, #141414);
+    --head-color: var(--c-13, #141414);
+    font-size: 64.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    place-items: center;
+    place-content: space-between;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    color: var(--head-color);
+}
+
+#logo-typography {
+    font-size: 3.2rem;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+    color: var(--p-color);
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.links {
+    list-style: none;
+}
+
+.links:nth-last-child(3) {
+    margin-left: -.8rem;
+    margin-right: 0;
+}
+
+.links a {
+    margin-right: 1.6rem;
+    text-decoration: none;
+    font-family: 'Fira Sans';
+    font-size: 1.6rem;
+    color: var(--p-color);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about #photo {
+    width: 55%;
+    height: 100%;
+    grid-column: 1;
+}
+
+.about ul h2 {
+    font-size: 4.5rem;
+}
