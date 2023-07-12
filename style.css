@@ -73,12 +73,17 @@ p {
     grid-template-columns: repeat(2, 1fr);
     margin-right: 5rem;
     place-items: center;
+    margin-left: -100px;
 }
 
 .about #photo {
-    width: 70%;
+    width: 60%;
     height: 100%;
-    margin-left: -100px;
+}
+
+.about #decoration {
+    width: 500px;
+    margin-bottom: -30px;
 }
 
 .about ul h2 {
@@ -91,7 +96,7 @@ p {
     width: 40ch;
     font-size: 2rem;
     font-family: 'Fira Sans';
-    padding-bottom: 1.8rem;
+    padding-bottom: 2.8rem;
     color: var(--p-color);
 }
 
@@ -99,7 +104,7 @@ p {
     margin-top: -2.5rem;
 }
 
-.about #decoration {
-    width: 500px;
-    margin-bottom: -30px;
+.about span {
+    color: var(--p-details);
+    font-weight: 600;
 }
