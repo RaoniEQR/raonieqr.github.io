@@ -2,6 +2,9 @@
     --p-color: var(--c-13, rgba(82, 82, 82, 1));
     --head-color: var(--c-13, #141414);
     --p-details: var(--c-12, rgba(20, 20, 20, 1));
+    --head-exp: var(--c-3, #E0E0E0);
+    --bg-exp: var(--c-1, #F5F5F5);
+    --p-exp: var(--c-10, #525252);
     font-size: 64.5%;
 }
 
@@ -20,6 +23,7 @@ nav {
     place-items: center;
     place-content: space-between;
 }
+
 
 h1, h2, h3, h4 {
     font-family: 'Playfair Display', serif;
@@ -73,11 +77,10 @@ p {
     grid-template-columns: repeat(2, 1fr);
     margin-right: 5rem;
     place-items: center;
-    margin-left: -100px;
+    margin-left: -25px;
 }
 
 .about #photo {
-    width: 60%;
     height: 100%;
 }
 
@@ -86,9 +89,13 @@ p {
     margin-bottom: -30px;
 }
 
+.about ul {
+    margin-top: -70px;
+}
 .about ul h2 {
     font-size: 5.5rem;
     width: 10ch;
+    margin-left: 40px;
 }
 
 .about li {
@@ -97,6 +104,7 @@ p {
     font-size: 2rem;
     font-family: 'Fira Sans';
     padding-bottom: 2.8rem;
+    margin-left: 40px;
     color: var(--p-color);
 }
 
@@ -107,4 +115,95 @@ p {
 .about span {
     color: var(--p-details);
     font-weight: 600;
+}
+
+.experience {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+.experience h3 {
+    font-size: 8rem;
+    max-width: 4.5ch;
+    overflow-wrap: break-word;
+    text-transform: uppercase;
+    color: var(--head-exp);
+}
+
+
+.experience li {
+    list-style: none;
+}
+
+.experience-item {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin-top: 55px;
+}
+
+.experience .years {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--p-color);
+    font-family: 'Fira Sans';
+    margin-left: -2rem;
+    margin-right: 6rem;
+    font-size: 1.6rem;
+    width: 100px;
+}
+
+#exp1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--bg-exp);
+    border-radius: 5px;
+}
+
+#exp1 ul, #exp2 ul {
+    padding: 0 20px;
+}
+
+#exp2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--bg-exp);
+    border-radius: 5px;
+}
+
+#exp1 h4, #exp2 h4{
+    color: #000;
+    font-family: Playfair Display;
+    font-size: 1.8rem;
+    margin: 8px 0;
+    padding: 0;
+}
+
+.work-about p, .work-skills li{
+    color: var(--p-exp);
+    font-family: 'Fira Sans';
+    font-size: 1.4rem;
+}
+
+.work-about p {
+    width: 50ch;
+}
+
+.work-skills ul {
+    display: flex;
+    min-width: 13.5rem;
+    flex-wrap: wrap;
+    place-content: space-between;
+}
+
+.work-skills li {
+    color: var(--p-details);
+    text-align: center;
+    background: #FFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: -20px;
 }
