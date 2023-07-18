@@ -67,6 +67,8 @@ p {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
     max-width: 980px;
     margin: 0 auto;
     margin-top: 8rem;
@@ -119,8 +121,9 @@ p {
 
 .experience {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     place-items: center;
+    gap: 10rem;
 }
 
 .experience h3 {
@@ -143,16 +146,15 @@ p {
     margin-top: 55px;
 }
 
-.experience .years {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: var(--p-color);
-    font-family: 'Fira Sans';
-    margin-left: -2rem;
-    margin-right: 6rem;
-    font-size: 1.6rem;
-    width: 100px;
+.detail:before {
+    content: "";
+    display: inline-block;
+    background: linear-gradient(180deg, #B629F8 0%, #800ADD 100%);
+    width: 0.4rem;
+    height: 2rem;
+    flex-shrink: 0;
+    margin-left: -33px;
+    margin-right: 2.5rem;
 }
 
 #exp1{
@@ -163,7 +165,7 @@ p {
 }
 
 #exp1 ul, #exp2 ul {
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
 #exp2{
