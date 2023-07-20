@@ -181,6 +181,7 @@ p {
     font-size: 1.8rem;
     margin: 8px 0;
     padding: 0;
+    margin-bottom: 1.3rem;
 }
 
 .work-about p, .work-skills li{
@@ -198,6 +199,7 @@ p {
     min-width: 13.5rem;
     flex-wrap: wrap;
     place-content: space-between;
+    margin-left: -5px;
 }
 
 .work-skills li {
@@ -207,5 +209,5 @@ p {
     padding: 5px 10px;
     border-radius: 5px;
     margin-bottom: 10px;
-    margin-left: -20px;
+    margin-left: -25px;
 }
